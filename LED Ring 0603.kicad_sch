@@ -1,0 +1,365 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d99417b0-253f-4aa5-ad8a-bad5e4df4484")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 181.61 125.73) (xy 190.5 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11a7e466-a103-4d63-bf3d-23fc51b99179")
+	)
+	(wire
+		(pts
+			(xy 173.99 121.92) (xy 173.99 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1847ecfb-1c05-4943-ab04-3d0738d68bd2")
+	)
+	(bus
+		(pts
+			(xy 181.61 115.57) (xy 181.61 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328aef03-18a5-4193-a835-50f1db61dfb9")
+	)
+	(wire
+		(pts
+			(xy 176.53 128.27) (xy 176.53 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b765ca9-8531-4ba9-8584-00c9b0ddcb6a")
+	)
+	(wire
+		(pts
+			(xy 166.37 121.92) (xy 173.99 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c88f850-26a8-45ec-a565-99fcbf911764")
+	)
+	(wire
+		(pts
+			(xy 190.5 128.27) (xy 176.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78ea9cbd-7048-467c-be5c-affbcc70ce74")
+	)
+	(bus
+		(pts
+			(xy 166.37 115.57) (xy 181.61 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9a96a7f-c4a7-4483-98fa-1e84ca11b7b5")
+	)
+	(bus
+		(pts
+			(xy 190.5 87.63) (xy 177.8 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25663fe-6624-432f-aec9-21f9123ce426")
+	)
+	(bus
+		(pts
+			(xy 177.8 87.63) (xy 177.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69f9c17-5dcd-4583-a579-8480eae6ce75")
+	)
+	(bus
+		(pts
+			(xy 177.8 99.06) (xy 166.37 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce382217-461b-485c-b7bb-c2243ac226b5")
+	)
+	(wire
+		(pts
+			(xy 176.53 119.38) (xy 166.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82ca3df-e4f2-4b8d-a2e1-7f98021b9b9e")
+	)
+	(wire
+		(pts
+			(xy 173.99 130.81) (xy 190.5 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e54c3dbf-43d5-4a9a-ab81-c20ebec4a602")
+	)
+	(sheet
+		(at 190.5 76.2)
+		(size 46.99 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "637778ae-5a9e-4b88-a1fb-46925ce2d7db")
+		(property "Sheetname" "Led Matrix"
+			(at 190.5 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledmatrix.kicad_sch"
+			(at 190.5 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LEDS" input
+			(at 190.5 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5c605083-4950-4ee9-a48f-808122b2628d")
+		)
+		(instances
+			(project "LED Ring 0603"
+				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 99.06)
+		(size 15.24 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d1ac3ec-9dea-4eb4-90c7-8a87af81c4c1")
+		(property "Sheetname" "Power"
+			(at 76.2 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 76.2 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LED Ring 0603"
+				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 86.36)
+		(size 55.88 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b")
+		(property "Sheetname" "MCU"
+			(at 110.49 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontrolelr.kicad_sch"
+			(at 110.49 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RESET" input
+			(at 166.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5cbd09dc-b55e-43d5-ad7a-ebfaee499bcf")
+		)
+		(pin "I2C" input
+			(at 166.37 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8896e374-e5b5-4c5a-9db7-2fcb5a557725")
+		)
+		(pin "LEDS" input
+			(at 166.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "db5da1af-e955-491d-8d66-04ff968a23b9")
+		)
+		(pin "INT0" input
+			(at 166.37 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6f5e093a-a87d-45cc-b6a9-f4592995e705")
+		)
+		(instances
+			(project "LED Ring 0603"
+				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 118.11)
+		(size 29.21 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "db2a61ca-a957-4b62-87ea-49585897fa36")
+		(property "Sheetname" "Accelerometer"
+			(at 190.5 117.3984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "accelerometer.kicad_sch"
+			(at 190.5 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RESET" input
+			(at 190.5 130.81 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2eeab358-74ed-4f85-94f0-f523cf739c27")
+		)
+		(pin "I2C" input
+			(at 190.5 125.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "92d374eb-b0ee-4d4f-85c2-0441f4043a41")
+		)
+		(pin "INT0" input
+			(at 190.5 128.27 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a4df8334-b946-4e1a-9247-8b75446744d1")
+		)
+		(instances
+			(project "LED Ring 0603"
+				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
