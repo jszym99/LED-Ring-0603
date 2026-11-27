@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "14e62178-9b6b-4366-b6c4-3788e348a54d")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -79,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -91,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -140,9 +142,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -261,6 +266,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "New_Library:ADXL367"
 			(exclude_from_sim no)
@@ -322,17 +328,53 @@
 						(type background)
 					)
 				)
-				(pin input line
-					(at 17.78 -6.35 180)
+				(pin power_in line
+					(at -17.78 1.27 0)
 					(length 2.54)
-					(name "SCLK"
+					(name "Vreg_out"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "INT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "INT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -359,7 +401,7 @@
 					)
 				)
 				(pin power_in line
-					(at 1.27 -12.7 90)
+					(at -1.27 -12.7 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -368,7 +410,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -387,6 +429,78 @@
 						)
 					)
 					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 6.35 180)
+					(length 2.54)
+					(name "ADC_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "CS/SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 -1.27 180)
+					(length 2.54)
+					(name "MISO/ASEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -413,124 +527,16 @@
 					)
 				)
 				(pin input line
-					(at 17.78 -1.27 180)
+					(at 17.78 -6.35 180)
 					(length 2.54)
-					(name "MISO/ASEL"
+					(name "SCLK"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 1.27 180)
-					(length 2.54)
-					(name "CS/SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.78 -7.62 0)
-					(length 2.54)
-					(name "INT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.78 -5.08 0)
-					(length 2.54)
-					(name "INT2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 6.35 180)
-					(length 2.54)
-					(name "ADC_IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -17.78 1.27 0)
-					(length 2.54)
-					(name "Vreg_out"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -539,12 +545,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -635,6 +646,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1240,7 +1252,7 @@
 			(uuid "bedf3a42-298e-4a1f-aa35-8f5a29be97b6")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "U1")
 					(unit 1)
@@ -1307,7 +1319,7 @@
 			(uuid "80b92b34-4abc-46d8-ad5d-391d532df2d6")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "#PWR02")
 					(unit 1)
@@ -1373,7 +1385,7 @@
 			(uuid "5975b98e-01c8-46e5-a239-b3e25c7eea20")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "#PWR01")
 					(unit 1)
@@ -1440,7 +1452,7 @@
 			(uuid "31784440-5e30-4662-b57f-2d98f22da5de")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "C1")
 					(unit 1)
@@ -1508,7 +1520,7 @@
 			(uuid "b5a11110-d161-42ef-8971-657cdcee50d0")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "C2")
 					(unit 1)
@@ -1578,7 +1590,7 @@
 			(uuid "2f617be4-f358-40c5-bf18-8cbf1a153309")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "R1")
 					(unit 1)
@@ -1645,7 +1657,7 @@
 			(uuid "ee1f053a-f866-441a-a15d-6c2df4399760")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "C3")
 					(unit 1)
@@ -1660,7 +1672,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ac3a91ba-618d-4e85-b0c1-cfb80f6e4453")
 		(property "Reference" "R6"
@@ -1730,7 +1742,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ed39c234-a87f-4574-a554-33982f1254a7")
 		(property "Reference" "R5"
@@ -1851,7 +1863,7 @@
 			(uuid "fb89aef4-3a3c-4122-8d14-4f5e9a93cc49")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/db2a61ca-a957-4b62-87ea-49585897fa36"
 					(reference "#PWR03")
 					(unit 1)

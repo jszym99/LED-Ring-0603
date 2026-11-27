@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "a242af83-6e48-42a8-9e6f-d1b80e3cdabb")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -76,10 +80,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -100,7 +116,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -112,22 +128,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -173,6 +177,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3659,7 +3664,7 @@
 			(uuid "e7ffa6d8-c264-42b1-a86c-c43049182702")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D22")
 					(unit 1)
@@ -3729,7 +3734,7 @@
 			(uuid "2cd2f6c2-5b11-4def-9a21-9fd561d2aa19")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D42")
 					(unit 1)
@@ -3799,7 +3804,7 @@
 			(uuid "f571a25f-6b69-42a4-ae56-e2240f989a19")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D70")
 					(unit 1)
@@ -3869,7 +3874,7 @@
 			(uuid "e4d16bb1-aa65-41f0-bde0-acc58e727eb2")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D6")
 					(unit 1)
@@ -3939,7 +3944,7 @@
 			(uuid "9ec535b4-fbbf-43cf-ba94-9a0971b479d7")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D27")
 					(unit 1)
@@ -4009,7 +4014,7 @@
 			(uuid "7fe3e27c-d85f-4cfd-86ca-e88ab46381f8")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D26")
 					(unit 1)
@@ -4079,7 +4084,7 @@
 			(uuid "fda922eb-cfae-40dc-ac4c-fee11b7bb73b")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D52")
 					(unit 1)
@@ -4149,7 +4154,7 @@
 			(uuid "189e9178-fd1a-404a-8ee7-0d5fa4b7e58d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D1")
 					(unit 1)
@@ -4219,7 +4224,7 @@
 			(uuid "3fe5f5ab-5701-4880-a60d-de9679a1bd59")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D3")
 					(unit 1)
@@ -4289,7 +4294,7 @@
 			(uuid "6d854a3f-66c4-43b0-a42e-fbd5f0f91dc6")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D34")
 					(unit 1)
@@ -4359,7 +4364,7 @@
 			(uuid "865113fe-866d-418e-8c98-b4f2dbbf4bcd")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D25")
 					(unit 1)
@@ -4429,7 +4434,7 @@
 			(uuid "1a4ce1f3-792d-4144-aea3-72fc17a1650d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D50")
 					(unit 1)
@@ -4499,7 +4504,7 @@
 			(uuid "c84ddfc4-9f5e-4b71-b665-d79da765d25e")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D7")
 					(unit 1)
@@ -4569,7 +4574,7 @@
 			(uuid "25be3520-b824-498a-ab22-76b824ea0135")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D53")
 					(unit 1)
@@ -4639,7 +4644,7 @@
 			(uuid "dc216c80-7b65-4529-ac89-e335135cbe99")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D4")
 					(unit 1)
@@ -4709,7 +4714,7 @@
 			(uuid "c9a2f220-4d5a-4e9a-8d19-1c4aa98c20b8")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D14")
 					(unit 1)
@@ -4779,7 +4784,7 @@
 			(uuid "5f3c1ed2-d754-48ff-93d6-1316ef7e69ec")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D58")
 					(unit 1)
@@ -4849,7 +4854,7 @@
 			(uuid "232854e7-090f-40f8-a380-05e3a7929a9b")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D38")
 					(unit 1)
@@ -4919,7 +4924,7 @@
 			(uuid "5c7a2468-a6db-485a-832b-320f7da7f787")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D37")
 					(unit 1)
@@ -4989,7 +4994,7 @@
 			(uuid "831c91d8-8ca9-4923-80af-77442c734abf")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D31")
 					(unit 1)
@@ -5059,7 +5064,7 @@
 			(uuid "e3f91ca6-7516-4839-9e38-6bc2449a3dc9")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D15")
 					(unit 1)
@@ -5129,7 +5134,7 @@
 			(uuid "c582bd3c-cda1-465f-a190-145fa889fa2a")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D2")
 					(unit 1)
@@ -5199,7 +5204,7 @@
 			(uuid "46d1c572-29f8-4ff0-b554-6096dc023fc7")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D13")
 					(unit 1)
@@ -5269,7 +5274,7 @@
 			(uuid "6be1c000-36b9-4b58-a1de-44ad69cceb64")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D44")
 					(unit 1)
@@ -5339,7 +5344,7 @@
 			(uuid "7663feb4-6547-4883-8eaa-cf42b787c3ec")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D5")
 					(unit 1)
@@ -5409,7 +5414,7 @@
 			(uuid "80387a91-32ae-43cc-b5e6-013647b85a1a")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D41")
 					(unit 1)
@@ -5479,7 +5484,7 @@
 			(uuid "1f70ee52-accd-4da1-886f-2a808abf150a")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D18")
 					(unit 1)
@@ -5549,7 +5554,7 @@
 			(uuid "d8577fbd-6172-4866-a4a3-52d04acf767d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D23")
 					(unit 1)
@@ -5619,7 +5624,7 @@
 			(uuid "bd7c2531-486d-49f6-a024-b48764643d61")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D51")
 					(unit 1)
@@ -5689,7 +5694,7 @@
 			(uuid "aaf377de-53b8-41ce-a1c4-111885bd0b0c")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D72")
 					(unit 1)
@@ -5759,7 +5764,7 @@
 			(uuid "c30c51a6-517e-4a19-aefd-393b83a12a04")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D29")
 					(unit 1)
@@ -5829,7 +5834,7 @@
 			(uuid "56adbdc1-9444-400e-9e33-eea737240950")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D48")
 					(unit 1)
@@ -5899,7 +5904,7 @@
 			(uuid "3731cbe7-dc84-42f7-8020-bae7aff8c6be")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D11")
 					(unit 1)
@@ -5969,7 +5974,7 @@
 			(uuid "568f76da-6a31-46d9-bdef-611f8b570289")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D47")
 					(unit 1)
@@ -6039,7 +6044,7 @@
 			(uuid "f13aac31-678b-4994-9a44-3edc4c81f95f")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D59")
 					(unit 1)
@@ -6109,7 +6114,7 @@
 			(uuid "69d57ad3-d533-4085-9349-b001c772e74d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D10")
 					(unit 1)
@@ -6179,7 +6184,7 @@
 			(uuid "ea79c43e-782c-4f02-9b1e-089746a232d2")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D60")
 					(unit 1)
@@ -6249,7 +6254,7 @@
 			(uuid "27e20297-17a0-4dfc-94e4-6cdfeac9cdff")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D28")
 					(unit 1)
@@ -6319,7 +6324,7 @@
 			(uuid "a3e3ec56-ac09-4607-a5c5-255e069265b0")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D21")
 					(unit 1)
@@ -6389,7 +6394,7 @@
 			(uuid "e2fe787e-d771-45ba-b31a-1d736e0e24aa")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D62")
 					(unit 1)
@@ -6459,7 +6464,7 @@
 			(uuid "a2a67c9f-5f19-4170-88b7-3d4b62d79fd1")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D16")
 					(unit 1)
@@ -6529,7 +6534,7 @@
 			(uuid "67170f4c-9297-4eab-a821-fe877ce4ba44")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D68")
 					(unit 1)
@@ -6599,7 +6604,7 @@
 			(uuid "263443a0-6c4f-4ff4-b038-4395c6e199da")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D63")
 					(unit 1)
@@ -6669,7 +6674,7 @@
 			(uuid "4da82843-fef9-4963-8182-731c476564e8")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D32")
 					(unit 1)
@@ -6739,7 +6744,7 @@
 			(uuid "9150a38e-72e2-4a73-80e4-49ad6f33ec5b")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D46")
 					(unit 1)
@@ -6809,7 +6814,7 @@
 			(uuid "8fd633a4-3e75-4bdb-8a7b-56f022fa65a0")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D8")
 					(unit 1)
@@ -6879,7 +6884,7 @@
 			(uuid "88ee3a74-7642-408d-8b4d-6e4521dc3a85")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D12")
 					(unit 1)
@@ -6949,7 +6954,7 @@
 			(uuid "ca6e28cb-077c-4f2d-849a-a440f2924211")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D24")
 					(unit 1)
@@ -7019,7 +7024,7 @@
 			(uuid "dd61171b-97ec-4b15-8a9f-b663be07f8c8")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D65")
 					(unit 1)
@@ -7089,7 +7094,7 @@
 			(uuid "65ba0958-8ee4-46f7-a2e4-05f45fbd451d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D36")
 					(unit 1)
@@ -7159,7 +7164,7 @@
 			(uuid "b5c28cc7-dbf7-48d3-b503-66f71de44735")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D69")
 					(unit 1)
@@ -7229,7 +7234,7 @@
 			(uuid "1cfd92b6-4f7d-4e6e-a89b-cc28a0a2e31c")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D39")
 					(unit 1)
@@ -7299,7 +7304,7 @@
 			(uuid "dfce5418-8f19-4f25-8934-28556dd2fb91")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D55")
 					(unit 1)
@@ -7369,7 +7374,7 @@
 			(uuid "9df0f0f5-f19a-41b3-ad3c-91b4fb598349")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D35")
 					(unit 1)
@@ -7439,7 +7444,7 @@
 			(uuid "0d14f482-852f-41c0-a1de-25404838cc9e")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D66")
 					(unit 1)
@@ -7509,7 +7514,7 @@
 			(uuid "e515e94c-dc16-4ad3-bc3b-f5cb050d674f")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D19")
 					(unit 1)
@@ -7579,7 +7584,7 @@
 			(uuid "938bd86c-b0cc-40ac-91f6-3185e46068e7")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D17")
 					(unit 1)
@@ -7649,7 +7654,7 @@
 			(uuid "c6cf19bf-649a-45cc-ac34-c045f749cc50")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D49")
 					(unit 1)
@@ -7719,7 +7724,7 @@
 			(uuid "7cfd5fa0-2078-4dd3-beec-acc155a97c67")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D33")
 					(unit 1)
@@ -7789,7 +7794,7 @@
 			(uuid "51c7cf79-f4da-4920-8e7f-d99ce7935986")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D71")
 					(unit 1)
@@ -7859,7 +7864,7 @@
 			(uuid "081cc581-7de2-4060-a1b3-56624b1cb007")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D56")
 					(unit 1)
@@ -7929,7 +7934,7 @@
 			(uuid "8e5409c8-9474-469d-9b86-fb9546f434da")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D43")
 					(unit 1)
@@ -7999,7 +8004,7 @@
 			(uuid "ce4f62e6-106a-4a3c-a74f-f9c1e38eab2e")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D54")
 					(unit 1)
@@ -8069,7 +8074,7 @@
 			(uuid "b96ce0c5-5ab9-4784-8605-4f95288f37b4")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D64")
 					(unit 1)
@@ -8139,7 +8144,7 @@
 			(uuid "88e250ca-4c32-4a01-9e84-c4e3a2113bd6")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D9")
 					(unit 1)
@@ -8209,7 +8214,7 @@
 			(uuid "792bc52f-612b-4b64-921d-ec6baed3498f")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D45")
 					(unit 1)
@@ -8279,7 +8284,7 @@
 			(uuid "02e47c45-ee5f-411a-b494-0cb434959114")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D61")
 					(unit 1)
@@ -8349,7 +8354,7 @@
 			(uuid "ca17dbc9-4a2b-4cda-85fb-4c5df287b7b9")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D30")
 					(unit 1)
@@ -8419,7 +8424,7 @@
 			(uuid "d1f0bad5-4625-4a79-a699-dad90ed3d145")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D57")
 					(unit 1)
@@ -8489,7 +8494,7 @@
 			(uuid "826a52f4-2485-4f6a-86d0-8afd62bb7df9")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D20")
 					(unit 1)
@@ -8559,7 +8564,7 @@
 			(uuid "e17dff12-34e9-4060-baec-81167c0b6f42")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D67")
 					(unit 1)
@@ -8629,7 +8634,7 @@
 			(uuid "e44225eb-cb88-46b5-b8a5-a5678df355af")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/637778ae-5a9e-4b88-a1fb-46925ce2d7db"
 					(reference "D40")
 					(unit 1)

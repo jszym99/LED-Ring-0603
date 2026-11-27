@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "6b9d4373-8caf-483c-a4e5-fbbb879017a1")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:Battery_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -91,7 +95,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -103,7 +107,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -176,12 +180,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -272,6 +281,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(wire
@@ -374,7 +384,7 @@
 			(uuid "76a91bae-5fe3-47ac-a6bb-313fc7247c98")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/7d1ac3ec-9dea-4eb4-90c7-8a87af81c4c1"
 					(reference "#PWR07")
 					(unit 1)
@@ -444,7 +454,7 @@
 			(uuid "20bccf24-c8a7-4441-b15b-522f753ebe0c")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/7d1ac3ec-9dea-4eb4-90c7-8a87af81c4c1"
 					(reference "BT1")
 					(unit 1)

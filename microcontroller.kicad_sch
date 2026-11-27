@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d21d4700-c7aa-4578-ab05-601dde46fe8f")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -79,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -91,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -140,9 +142,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -261,6 +266,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MCU_Microchip_ATtiny:ATtiny84A-SS"
 			(exclude_from_sim no)
@@ -362,17 +368,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 7.62 180)
+				(pin power_in line
+					(at 0 -22.86 90)
 					(length 2.54)
-					(name "PA3"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -381,16 +387,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 10.16 180)
+					(at 15.24 15.24 180)
 					(length 2.54)
-					(name "PA2"
+					(name "AREF/PA0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -417,16 +423,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 15.24 180)
+					(at 15.24 10.16 180)
 					(length 2.54)
-					(name "AREF/PA0"
+					(name "PA2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -434,17 +440,89 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -22.86 90)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
 					(length 2.54)
-					(name "GND"
+					(name "PA3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -489,24 +567,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -15.24 180)
-					(length 2.54)
-					(name "~{RESET}/PB3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 15.24 -12.7 180)
 					(length 2.54)
 					(name "PB2"
@@ -525,70 +585,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -2.54 180)
+					(at 15.24 -15.24 180)
 					(length 2.54)
-					(name "PA7"
+					(name "~{RESET}/PB3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "PA6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 2.54 180)
-					(length 2.54)
-					(name "PA5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 5.08 180)
-					(length 2.54)
-					(name "PA4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -597,12 +603,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -693,6 +704,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1692,7 +1704,7 @@
 			(uuid "7e31ef37-ec69-47a9-9fe4-33918be7d52d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "C4")
 					(unit 1)
@@ -1761,7 +1773,7 @@
 			(uuid "0bd1478a-7162-4f0e-9bcf-6e364c560650")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "R3")
 					(unit 1)
@@ -1868,7 +1880,7 @@
 			(uuid "106565a0-d009-4ac8-8f77-d009659efc34")
 		)
 		(instances
-			(project ""
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "U2")
 					(unit 1)
@@ -1938,7 +1950,7 @@
 			(uuid "dee19ccf-cf64-4b6f-8d34-1eac6847a27b")
 		)
 		(instances
-			(project ""
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "R2")
 					(unit 1)
@@ -2004,7 +2016,7 @@
 			(uuid "7ef86f6c-6ee9-4180-b37e-7a6e5858759c")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "#PWR06")
 					(unit 1)
@@ -2072,7 +2084,7 @@
 			(uuid "e46df520-24f8-4625-91f8-331d427ba3e0")
 		)
 		(instances
-			(project ""
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "R4")
 					(unit 1)
@@ -2140,7 +2152,7 @@
 			(uuid "3e147ddc-1205-409f-8d5c-09b917caa419")
 		)
 		(instances
-			(project ""
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "C5")
 					(unit 1)
@@ -2206,7 +2218,7 @@
 			(uuid "f51c2ad1-e6e3-4b2d-adfd-ba7a828e3f3d")
 		)
 		(instances
-			(project "LEDring"
+			(project "LED Ring 0603"
 				(path "/d99417b0-253f-4aa5-ad8a-bad5e4df4484/b2a51637-ef43-4d5c-9f4f-f2aea9b2d70b"
 					(reference "#PWR04")
 					(unit 1)
